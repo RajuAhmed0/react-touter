@@ -7,7 +7,7 @@ const Post = () => {
     // console.log(post);
     
     return (
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='md:grid grid-cols-2 gap-4 lg:mx-0 mx-1'>
             {
                 post.map((data) => <PostCard key={data.id} data={data}></PostCard>)
             }
