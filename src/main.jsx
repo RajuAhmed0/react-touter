@@ -8,6 +8,7 @@ import UsersDetails from './Components/UserCard/UsersDetails.jsx'
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx'
 import Post from './Components/ErrorPage/Posts/Post.jsx'
 import Home from './Components/Home/Home.jsx'
+import PostRead from './Components/ErrorPage/Posts/PostRead.jsx'
 
 
 const routeBrower = createBrowserRouter([
@@ -28,6 +29,11 @@ const routeBrower = createBrowserRouter([
         path:'/post',
         element: <Post></Post>,
         loader: () => fetch('https://jsonplaceholder.typicode.com/posts')
+      },
+      {
+        path:'post/:postId',
+        element: <PostRead></PostRead>,
+     
       },
       {
         path:'/users',
