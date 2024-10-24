@@ -13,8 +13,9 @@ const PostRead = () => {
         .then(data => setPostData(data))
     }, [])  
     return (
-        <div>
-            <h1 className='text-xl font-bold '>{postData.title}</h1>
+        <div className='border-2 border-cyan-400 rounded-lg'>
+            <p className='text-xl font-bold'>UserId : {postData.id}</p>
+            <h1 className='text-xl font-bold'>Title : {postData.title}</h1>
         </div>
     );
 };
